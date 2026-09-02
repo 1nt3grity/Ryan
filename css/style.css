@@ -1,0 +1,131 @@
+
+
+html{
+    background-color: #A61212;
+}
+/* First page*/
+h1{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 110px;
+text-align: center;
+text-shadow: 3px 5px 1px #12A6A6;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* Photo on left side*/
+
+.photo-container{
+    width: 350px;
+    flex-shrink: 0;
+
+}
+
+.photo-container img{
+    width: 350px;
+    height: auto;
+    display: block;
+
+}
+
+/* Article Text*/
+.container{
+width: 500px;
+text-align: center;
+
+
+}
+.container2 button{
+    display: block;
+    margin: 0 auto;
+} 
+
+
+
+
+
+.container2{
+    margin-left: 250;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+/* end of first page*/
+
+/* start of page two*/
+.carousel{
+    margin: 100px auto;
+    width: 90%;
+    border: 9px  solid #000000;
+    display: flex;
+    overflow-x: auto;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 8s infinite linear;
+    padding-right: 1em;
+}
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+.card img{
+    width: 130%;
+    height: 130%;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes spin{
+    from {translate: 0;}
+    to{ translate: -100%;}
+}
+
+/* question box*/
+
+.question-box {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.question-box p {
+    font-size: 30px;
+}
+
+.answers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.answers label {
+    font-size: 25px;
+}
+
+
+.container3{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+/* end of page two*/
+
+/* page three*/
+.talking{
+   text-align: center;
+}
