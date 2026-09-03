@@ -3,6 +3,38 @@
 html{
     background-color: #A61212;
 }
+
+body{
+min-height: 30vh;
+min-width: 40vh;
+
+}
+
+
+ul{
+    list-style-type: none;
+    margin: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+ul li{
+    float: right;
+}
+
+ul li a{
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+ul li a:hover{
+    background-color: #12A6A6;
+}
 /* First page*/
 h1{
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -35,6 +67,9 @@ text-shadow: 1px 1px 1px #12A6A6;
 .photo-container{
     width: 350px;
     flex-shrink: 0;
+    float: left;
+    border-radius:10px;
+    border: 3px black;
 
 }
 
@@ -47,14 +82,19 @@ text-shadow: 1px 1px 1px #12A6A6;
 
 /* Article Text*/
 .container{
-width: 500px;
+    margin: 100px auto;
+    width: 75%;
 text-align: center;
+height: 200px;
+border:  3px #000000;
 
 
 }
 .container2 button{
     display: block;
-    margin: 0 auto;
+    margin: 60px;
+    width: 235px;
+
 } 
 
 
@@ -143,3 +183,4 @@ margin-top: 50px;
 .talking{
    text-align: center;
 }
+
