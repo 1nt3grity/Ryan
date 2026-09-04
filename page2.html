@@ -26,7 +26,8 @@
         </label>
 
         <label>
-            <input type="radio" name="answer" value="no">
+            <input type="radio" name="answer" value="no"
+            onclick="noPage()">
             No
         </label>
     </div>
@@ -38,6 +39,14 @@ function yesPage() {
     window.location.href = "happy.html";
 }
 </script>
+<script>
+    function noPage() {
+        window.location.href = "tripp.html";
+    }
+</script>
+
+
+
 
 <!-- The big question-->
 <div class="carousel1">
