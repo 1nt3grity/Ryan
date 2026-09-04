@@ -1,13 +1,14 @@
 
-
-html{
-    background-color: #A61212;
-}
-
-body{
-min-height: 30vh;
-min-width: 40vh;
-
+body {
+margin: 0;
+background: linear-gradient(
+135deg,
+#f1a6b5,
+#fd063c,
+#ffffff
+);
+color: #000000;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -33,14 +34,15 @@ text-decoration: none;
 }
 
 ul li a:hover{
-    background-color: #12A6A6;
+    background-color: #f1a6b5;
 }
 /* First page*/
 h1{
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 25px;
 text-align: center;
-text-shadow: 1px 1px 1px #12A6A6;
+color: #ffffff;
+text-shadow: 1px 1px 1px #f1a6b5;
 }
 
 h2{
@@ -52,9 +54,10 @@ text-shadow: 2px 2px 1px #12A6A6;
 
 h3{
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 15px;
+font-size: 20px;
 text-align: center;
-text-shadow: 1px 1px 1px #12A6A6;
+text-shadow: 1px 1px 0px #ffffff55;
+margin: 20px 0;
 }
 
 .main-content {
@@ -70,6 +73,7 @@ text-shadow: 1px 1px 1px #12A6A6;
     float: left;
     border-radius:10px;
     border: 3px black;
+    justify-content: space-evenly;
 
 }
 
@@ -77,26 +81,30 @@ text-shadow: 1px 1px 1px #12A6A6;
     width: 350px;
     height: auto;
     display: block;
+    justify-content: space-evenly;
 
 }
 
 /* Article Text*/
-.container{
-    margin: 100px auto;
-    width: 75%;
-text-align: center;
-height: 200px;
-border:  3px #000000;
-
-
+.love-letter{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.969);
+    border-radius: 25px;
+    box-shadow: 
+    0 11px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
-.container2 button{
-    display: block;
-    margin: 60px;
-    width: 235px;
-
-} 
-
+.love-letter h2 {
+    color: #fd063c;
+font-size: 24px;
+margin-bottom: 20px;
+}
+.love-letter p{
+    font-size: 18px;
+    line-height: 1.7;
+}
 
 
 
@@ -128,20 +136,27 @@ border:  3px #000000;
     animation: spin 8s infinite linear;
     padding-right: 1em;
 }
-.card{
-    flex: 0 0 5em;
-    height: 5em;
-    padding: 1em;
-    font-size: 3rem;
-    border-radius: .2em;
+.card {
+    width: 280px;
+    padding: 15px;
+    background: #fd063c;
+    border-radius: 20px;
     text-align: center;
-    align-content: center;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.969);
 }
+
+
+
 .card img{
     width: 130%;
     height: 130%;
     object-fit: contain;
     display: block;
+}
+
+.card:hover{
+    transform: translateY(-10px) rotare(-1deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3)
 }
 
 @keyframes spin{
@@ -173,14 +188,30 @@ border:  3px #000000;
 
 .container3{
 display: flex;
-justify-content: center;
+justify-content: space-evenly;
 margin-top: 50px;
 }
-
-/* end of page two*/
-
-/* page three*/
-.talking{
-   text-align: center;
+.love-button{
+    display: inline-block;
+    background: #fd063c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px rgba(176, 30,75,0.3);
 }
+.love-button:hover {
+    background: #f1a6b5;
+    transform: scale(1.08);
+    box-shadow: 0 8px 13px  #fd063c;
+}
+/* happy page */
+.message{
+    text-align: center;
+    font-size: 12px;
+}
+
 
